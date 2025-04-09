@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="style" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Basic Task Management Board</title>
-</head>
-<body>
-<header> 
-    <h1> Task Project </h1>
-</header>
-<main> 
+  </head>
+  <body>
+    <header>
+      <h1>Task Project</h1>
+    </header>
     <div class="board">
-        <!-- Column 1 -->
-         <div class="column" id="C1">
-            <!-- the actual heading of the column -->
-            <h2> Column 1 </h2>
-            <!-- the actual of tasks on agenda -->
-            <div class="agenda" id="C1">
-         </div>
-         <div class="column" id= "C2">
-            <h2> Column 2</h2>
-            <div class="agenda" id="C2">
-         </div>
-         <div> 
-            <div class="column" id="C3">
-                <h2> Column 3 </h2>
-                <div class="agenda" id="C3">
-         </div>
-</main>
-<script src="scripting.js"></script>
-</body>
+      <!-- Column 1-->
+      <div class="column" id="C1">
+        <!-- Column 1-->
+        <h2>Column 1</h2>
+        <!-- Task Agenda-->
+        <div class="task-list" id="C1-list"></div>
+      </div>
+      <!-- Column 2 -->
+      <div class="column" id="C2">
+        <!-- column heading-->
+        <h2>Column 2</h2>
+        <!-- Tasks in Progress-->
+        <div class="task-list" id="C2-list"></div>
+      </div>
+      <!-- Column 3-->
+      <div class="column" id="C3">
+        <!-- column heading-->
+        <h2>Column 3</h2>
+        <!-- tasks completed-->
+        <div class="task-list" id="C3-list"></div>
+      </div>
+    </div>
+
+    <script src="scripting.js"></script>
+  </body>
 </html>
