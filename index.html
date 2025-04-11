@@ -4,35 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/197cba7756.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Basic Task Management Board</title>
   </head>
   <body>
     <header>
-      <h1>Task Project</h1>
+      <h1>Task Board</h1>
+      <input type="text" id="search" placeholder="Search..." />
+      <i class="fa-solid fa-user"></i>
     </header>
     <div class="board">
       <!-- Column 1-->
       <div class="column" id="C1">
         <!-- Column 1-->
-        <h2>Column 1</h2>
+        <h2>To-Do</h2>
         <!-- Task Agenda-->
         <div class="task-list" id="C1-list"></div>
       </div>
       <!-- Column 2 -->
       <div class="column" id="C2">
         <!-- column heading-->
-        <h2>Column 2</h2>
+        <h2>In-Progress</h2>
         <!-- Tasks in Progress-->
         <div class="task-list" id="C2-list"></div>
       </div>
       <!-- Column 3-->
       <div class="column" id="C3">
         <!-- column heading-->
-        <h2>Column 3</h2>
+        <h2>Completed</h2>
         <!-- tasks completed-->
         <div class="task-list" id="C3-list"></div>
       </div>
     </div>
+
+    <form id="task-form">
+      <input type="text" id="task-title" placeholder="Task Tittle" required />
+      <textarea id="task-desc" placeholder="Decription (optional)"></textarea>
+      <button type="Submit">Add task</button>
+    </form>
 
     <script src="scripting.js"></script>
   </body>
