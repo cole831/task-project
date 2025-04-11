@@ -17,6 +17,10 @@ header {
     margin-bottom: 20px;
     border-bottom: 4px solid;
     border-color: purple;
+    position: sticky;
+    top: 0;
+    background: #fcfdff;
+    z-index: 100;
 
 }
 
@@ -37,9 +41,9 @@ h1 {
   }
 
   .fa-user{
+    margin: auto;
     text-align: center;
     font-size: 22px;
-    margin-left: 500px;
     background-color: rgb(254, 197, 254);
     color: rgb(146, 38, 146);
     padding: 5px;
